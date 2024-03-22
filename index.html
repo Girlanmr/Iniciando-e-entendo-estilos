@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciando e Entendendo Estilos</title>
+    <style type="text/css">
+        h2 {
+            color:orange;
+            background:green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilo Inline</h1>
+    <p>
+        O CSS inline é usado para dar estilo a um elemento HTML específico. Para este estilo de CSS, você somente vai precisar adicionar o atributo style para cada tag HTML, sem usar os seletores.
+    </p>
+    <p>
+        Este tipo de CSS não é realmente recomendado, já que cada tag HTML precisa ser estilizada de maneira individual. Gerenciar o seu site pode se tornar uma tarefa bem difícil de você só usa o CSS inline.
+    </p>
+    <p>
+        Contudo, o CSS nline no HTML pode ser útil para algumas situações. Por exemplo, sem casos onde você não tem acesso aos arquivos CSS ou precisa aplicar estilos para um elemento único.
+    </p>
+    <p>
+        Começa-se escrevendo como se fosse um atributo dentro do h5<> colocando style="" mais o estilo que queira aplicar, por exemplo style="color:red;", a estrutura segue o formato, nome da propriedade: valor;, podendo depois do ';' colocar mais coisas, como 'font-size:30px;'
+    </p>
+    <h5 style="color:red;">Frase estilizada em vermelho</h5>
+    <p>
+        Podendo até mesmo aumentar ou diminuir o tamanho de uma fonte já estabelecida, como o h5 que usei antes e irei usar novamente mas agora colocando o atributo fonte:
+    </p>
+    <h5 style="font-size:20px;">Frase estilizada com fonte de 20 px</h5>
+    <p>
+        Até mesmo o link, que por padrão já vem sublinhado pode-se alterar usando o comando 'text-decoration: none;', assim a decoração natural é removida:
+    </p>
+    <a style="text-decoration: none;" href>Link estilizado sem linha</a> 
+    <h1>Estilo Interno</h1>
+    <p>
+        Podendo também também ser colocado dentro do documento, o CSS interno ou incorporado requer que você adicione a tags style<> na seção head<> do seu documento HTML.
+    </p>
+    <p>
+        Este estilo de CSS é um método efetivo de estilizar uma única página. Contudo, usar esse estilo em múltiplas páginas pode consumir muito tempo, já que você precisa definir as regras CSS para cada página do seu site.
+    </p>
+    <p>
+        Aplica-se então no Head o próprio style type="text/css" <>/<> onde então se escolha qual tag vai ser estilizada colocando os atributos entre os <>/<>, porém o estilo inline tem uma certa prioridade se a mesma tag for afetada por ambos, exemplo: style type="text/css" h2{ color:orange; background: green; }<>/<>
+    </p>
+    <h2>
+        Texto estilizado através do Head
+    </h2>
+</body>
+</html>
